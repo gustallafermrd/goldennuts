@@ -12,7 +12,7 @@ git init
 git add .
 git commit -m "Initial commit - translate + refactor + hero video"
 # Create a remote on GitHub and push
-git remote add origin git@github.com:<your-user>/<repo>.git
+<yougit remote add origin git@github.com:r-user>/<repo>.git
 git push -u origin main
 ```
 
