@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LiasDesign - Automated Marketing Systems</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF5F1F",
+                        secondary: "#001B3D",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #003366 0%, #001B3D 70%, #000D1F 100%);
+        }
+        .how-it-works-gradient {
+            background: linear-gradient(180deg, #001B3D 0%, #000D1F 100%);
+        }
+        .section-title-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .section-title-container::before,
+        .section-title-container::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #CBD5E1;}
+        .dark .section-title-container::before,
+        .dark .section-title-container::after {
+            border-bottom: 1px solid #334155;}
+        .section-title-container::before {
+            margin-right: 1.5rem;
+        }
+        .section-title-container::after {
+            margin-left: 1.5rem;
+        }
+        .step-arrow::after {
+            content: '›';
+            margin-left: 0.5rem;
+            opacity: 0.5;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+    <header class="sticky top-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-white/10 text-white">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="text-2xl font-extrabold tracking-tighter">
+                    Lias<span class="text-primary">Design</span>
+                </div>
+                <div
+                    class="text-[10px] uppercase tracking-widest leading-none border-l border-white/20 pl-2 ml-2 hidden sm:block">
+                    Systemized<br />Agency
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a class="hover:text-primary transition-colors" href="#">Case Studies</a>
+                <a class="hover:text-primary transition-colors" href="#">Pricing</a>
+                <a class="hover:text-primary transition-colors" href="#">About Us</a>
+                <a class="hover:text-primary transition-colors" href="#">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button class="p-2 rounded-full hover:bg-white/10 transition-colors"
+                    onclick="document.documentElement.classList.toggle('dark')">
+                    <span class="material-symbols-outlined text-xl">dark_mode</span>
+                </button>
+                <a class="bg-primary hover:bg-orange-600 px-5 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105"
+                    href="#">
+                    Free Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="hero-gradient text-white pt-20 pb-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 z-10">
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight">
+                    Automated <span class="text-primary">Brand &amp; Marketing Systems</span> for Local Businesses
+                </h1>
+                <p class="text-xl text-slate-300 max-w-lg leading-relaxed">
+                    We build scalable solutions for your business to grow fast, delegating technological complexity to
+                    our systems.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <button
+                        class="bg-primary hover:bg-orange-600 px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-primary/20 transition-all flex items-center gap-2">
+                        Free Consultation
+                    </button>
+                    <button
+                        class="bg-white/10 hover:bg-white/20 border border-white/20 px-8 py-4 rounded-lg font-bold text-lg backdrop-blur-sm transition-all flex items-center gap-2">
+                        <span class="material-symbols-outlined">play_circle</span>
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+            <div class="relative z-10">
+                <div
+                    class="rounded-2xl overflow-hidden shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <img alt="Branded business vehicle in front of a modern storefront" class="w-full h-auto"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJptJptkv5j9SBoQ7fdx1oJRIx66g5bgSwsOsx1GFwAxHYDYVM5MxWK1G_OXT3yBy_lGe3_ziWW0fOnXVncvMxthRp8hvlSJWkhiflEo8jXXxouZVf1p5z6cEonkn3I1KIEEJpTyFC5b_B1A6VkAwffcJIJx3D28tn1P7flKkVbddaLKRUJYqoj9ZTuhh4xo4DaBgiRV_-nfTqzArkwfvKd0SY-g0SY_oHDOlDx-l-evhoRYxezXJLCHqjrrgcv4s3yfntl0OUvhs" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-[120px] rounded-full"></div>
+    </section>
+    <section class="py-12 bg-white dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <div class="flex justify-center mb-4">
+                    <!-- <div class="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-bold uppercase">Our Services</div> -->
+                </div>
+                <div class="section-title-container">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white px-2">Our Systematic
+                        Solutions</h2>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">diamond</span>
+                        Brand System
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Logos &amp;
+                            Brand Kits
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Business
+                            Websites
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Social
+                            Media Automation
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">language</span>
+                        Local Growth
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Google
+                            &amp; Ads Management
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Review
+                            Boosting
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> CRM
+                            Automation
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">video_settings</span>
+                        Content Engine
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Video
+                            Content Creation
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> AI
+                            Templates &amp; Reels
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Scheduling
+                            Tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works-gradient text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 mb-12">
+            <div class="section-title-container">
+                <h2 class="text-3xl font-bold px-2">How It Works</h2>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div
+                class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm">
+                <div class="flex items-center gap-4 group">
+                    <span
+                        class="text-4xl font-black text-primary/40 group-hover:text-primary transition-colors">1</span>
+                    <span class="text-lg font-bold step-arrow">Audit &amp; Plan</span>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <span
+                        class="text-4xl font-black text-primary/40 group-hover:text-primary transition-colors">2</span>
+                    <span class="text-lg font-bold step-arrow">Build Your System</span>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <span
+                        class="text-4xl font-black text-primary/40 group-hover:text-primary transition-colors">3</span>
+                    <span class="text-lg font-bold step-arrow">Automate &amp; Optimize</span>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <span
+                        class="text-4xl font-black text-primary/40 group-hover:text-primary transition-colors">4</span>
+                    <span class="text-lg font-bold">Scale Your Business</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 bg-background-light dark:bg-background-dark">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="mb-16">
+                <div class="section-title-container">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white px-2">Success Stories
+                    </h2>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="group flex flex-col items-center">
+                    <h4 class="text-secondary dark:text-white text-xl font-bold mb-4 text-center">Food Truck
+                        Transformation</h4>
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg mb-6 w-full max-w-sm">
+                        <img alt="Food Truck Transformation"
+                            class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFpfttOKfe8sEIlVsPn1rf5Jdj3aBHXM9Oy2E-unG3hai9F1fI2Z5CJY1WLXj0wT1H9zCDh2Iuzs7PikTkXJfvnXr9L5_hZIHXChKaZa1GAyPyux6cKCjo7r3bimiuyypHtVw_Fs-iTJ8qkkHS7OrhOmJOQIebTtXct82A7yvW09xlX1UqWONawvZ89Tj9icQfoZ4GhWAM_9xfOOKPHDiL5SOXmfYOHwabh9vJnYExCWoZQ-_By6eACjYXrjR-dbw5HRUogCLaKKY" />
+                    </div>
+                    <blockquote class="text-lg italic text-slate-600 dark:text-slate-400 text-center px-4">
+                        "Our sales doubled in just 3 months!"
+                    </blockquote>
+                </div>
+                <div class="group flex flex-col items-center">
+                    <h4 class="text-secondary dark:text-white text-xl font-bold mb-4 text-center">Retail Brand Upgrade
+                    </h4>
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg mb-6 w-full max-w-sm">
+                        <img alt="Retail Store Upgrade"
+                            class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsgEsyu6zNk98rYkIAwZ1n6KaXfBPgluvkugQB6Y7G7Jq94hLeH6M2HP1bWDJI9qtWv7BKMTezfqjc_BJbCU3ZCN3AYy7rnjU-tT00AjkwLRXRJ6ajF4GQBWXcQhlIzBDEdimzAvP4W1yWe2a1vJmjSaR-PDv73stwEY4jHnJOoL5TnROSLDZMe8psxO37y96iJ0_hcHtW92JthMuFO_ajfGIJJtghI0lppEhLu6GaSEdUBRpEIXPLZMj-2ujddsgMu6wOh_mcOfA" />
+                    </div>
+                    <blockquote class="text-lg italic text-slate-600 dark:text-slate-400 text-center px-4">
+                        "The new look of our store is incredible!"
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 bg-white dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <div class="section-title-container">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white px-2">Choose Your Plan
+                    </h2>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden flex flex-col shadow-lg">
+                    <div class="bg-secondary text-white py-6 text-center font-bold text-lg">Initial System</div>
+                    <div class="p-10 flex-grow text-center flex flex-col items-center">
+                        <div class="text-4xl font-extrabold text-secondary dark:text-white mb-2">$1,500+</div>
+                        <p class="text-slate-500 mb-8">One-time payment</p>
+                        <button
+                            class="w-full py-4 rounded-xl bg-primary text-white font-bold hover:bg-orange-600 transition-colors">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div
+                    class="border-2 border-primary rounded-3xl overflow-hidden flex flex-col shadow-2xl relative scale-105 z-10">
+                    <div
+                        class="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-xl text-xs font-bold uppercase">
+                        Popular</div>
+                    <div class="bg-primary text-white py-6 text-center font-bold text-lg">Growth System</div>
+                    <div class="p-10 flex-grow text-center flex flex-col items-center bg-white dark:bg-slate-800">
+                        <div class="text-4xl font-extrabold text-secondary dark:text-white mb-2">$3,500+</div>
+                        <p class="text-slate-500 mb-8">One-time payment</p>
+                        <button
+                            class="w-full py-4 rounded-xl bg-primary text-white font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-primary/20">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div
+                    class="border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden flex flex-col shadow-lg">
+                    <div class="bg-secondary text-white py-6 text-center font-bold text-lg">Scale System</div>
+                    <div class="p-10 flex-grow text-center flex flex-col items-center">
+                        <div class="text-4xl font-extrabold text-secondary dark:text-white mb-2">$7,000+</div>
+                        <p class="text-slate-500 mb-8">One-time payment</p>
+                        <button
+                            class="w-full py-4 rounded-xl bg-primary text-white font-bold hover:bg-orange-600 transition-colors">Get
+                            Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+        <div class="bg-primary py-6 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+                <h3 class="text-white text-xl md:text-2xl font-extrabold">Ready to automate your business growth?</h3>
+                <a class="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-slate-100 transition-colors flex items-center gap-2"
+                    href="#">
+                    Book Free Consultation
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+        <div class="py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-blue-600">verified_user</span>
+                        <span class="font-bold text-slate-900 dark:text-white">PumbPro</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-red-600">auto_awesome</span>
+                        <span class="font-bold text-slate-900 dark:text-white">VipAccess</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sky-600">water_drop</span>
+                        <span class="font-bold text-slate-900 dark:text-white">OceanView</span>
+                    </div>
+                </div>
+                <hr class="my-10 border-slate-200 dark:border-slate-800" />
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500 font-medium">
+                    <div>© 2024 Lias Design. All rights reserved.</div>
+                    <div class="flex gap-8">
+                        <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                        <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
